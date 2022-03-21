@@ -1,2 +1,2 @@
 # PluginsWordpress
-this a list of Wordpress plugins
+This a list of Wordpress plugins by Nefzaoui Achref
