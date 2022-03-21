@@ -19,7 +19,20 @@
 // Remove the admin bar from the front end
 add_filter( 'show_admin_bar', '__return_false' );
 
+//add Menu option
+add_actions("admin_menu","addMenu");
+function addMenu(){
+  add_menu_page("Example Options","Example Options", 4,"example-options","exampleMenu");
+  add_submenu_page("example-options","Option 1","Option 1", 4, "example-option-1","Option1");
+}
 
+function exampleMenu(){
+  echo "hello world"
+}
+
+function Option1(){
+  echo "this another option plugin"
+}
 
 
 ?>
