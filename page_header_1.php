@@ -32,16 +32,15 @@ if ( isset($is_shortcode)){
       <?php endif; ?>
       <div class="page-title-wrap<?php echo ! $hide_title ? '' : 'd-none'; ?>">
         <h1 class="page-title<?php echo ! $sub_title ? '' : 'b-none' ; ?>"><?php echo porto_strip_script_tags($title); ?></h1>
-          <?php
-            if( $sub_title ) :
-          ?>
-        <p class="page-sub-title"><?php echo porto_strip_script_tags($sub_title); ?></p>
-        <?php endif; ?>
+        <?php
+        if( $sub_title ) :
+        ?>
+          <p class="page-sub-title"><?php echo porto_strip_script_tags($sub_title); ?></p>
+       <?php endif; ?>
       </div>
-      <?php
-      
-      porto_breadcrumbs_filter();
-      ?>
+        <?php
+          porto_breadcrumbs_filter();
+        ?>
     </div>
   </div>
 </div>
