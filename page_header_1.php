@@ -21,6 +21,7 @@ if ( isset($is_shortcode)){
 }
 
 ?>
+
 <div class="container<?php echo ! $hide_title ? '' : 'hide-title'; ?>">
   <div class="row">
     <div class="col-lg-12">
